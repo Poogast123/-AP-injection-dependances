@@ -1,15 +1,14 @@
 package org.example;
 
-public class MetierImpl implements IMetier {
-    private IDao dao;
+public class MetierImpl {
+    private DaoImpl dao;
 
-    @Override
-    public double calcul() {
-        double data = dao.getData();
-        return data * 2;
-    }
-
-    public void setDao(IDao dao) {
+    public void setDao(DaoImpl dao) {
         this.dao = dao;
     }
+
+    public void process() {
+        System.out.println("Traitement des données : " + dao.getData());
+    }
 }
+

@@ -13,5 +13,14 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <dependencies>
+        <!-- Spring Core pour l'injection de dépendances -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
